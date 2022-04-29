@@ -1,10 +1,21 @@
 {
-  "name": "backend",
+  "name": "nextjs-messenger-mern-socket",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
+  "cacheDirectories": [
+    "node_modules",
+    "frontend/node_modules",
+    ".next/cache"
+  ],
   "scripts": {
-    "dev": "nodemon ./src/server.ts"
+    "dev": "nodemon ./src/server.ts",
+    "build": "cd frontend && npm run install && npm run build",
+    "start": "node index.js && cd frontend && npm run start",
+    "deploy": "git add . && git commit -m Build && git push && git push heroku && heroku logs --tail --remote heroku"
   },
   "keywords": [],
   "author": "",
