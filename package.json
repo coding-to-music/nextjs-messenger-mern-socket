@@ -12,9 +12,9 @@
     ".next/cache"
   ],
   "scripts": {
-    "dev": "nodemon ./src/server.ts",
+    "dev": "nodemon ./backend/src/server.ts",
     "build": "cd frontend && npm run install && npm run build",
-    "start": "node index.js && cd frontend && npm run start",
+    "start": "node ./backend/src/server.ts && cd frontend && npm run start",
     "deploy": "git add . && git commit -m Build && git push && git push heroku && heroku logs --tail --remote heroku"
   },
   "keywords": [],
