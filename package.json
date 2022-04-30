@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "dev": "nodemon ./backend/src/server.ts",
-    "build": "cd frontend && npm run install && npm run build",
+    "build": "cd frontend && npm install && npm run build",
     "start": "node ./backend/src/server.ts && cd frontend && npm run start",
     "deploy": "git add . && git commit -m Build && git push && git push heroku && heroku logs --tail --remote heroku"
   },
