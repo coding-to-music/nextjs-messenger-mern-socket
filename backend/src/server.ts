@@ -44,7 +44,7 @@ const getUser = (id: string) => {
   return onlineUsers.find((obj) => obj._id === id);
 };
 
-const uri: string = process.env.DATABASE_URL || "";
+const uri: string = process.env.MONGODB_URI || "";
 
 mongoose.connect(uri, (err) => (err ? console.log(err) : ""));
 

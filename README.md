@@ -16,11 +16,10 @@ by Domen Perko https://github.com/perkzen
 
 https://github.com/perkzen/messenger
 
-## Environment Values
+## Environment Values for .env
 
 ```java
-
-  API_KEY: process.env.API_KEY,
+MONGODB_URI="mongodb+srv://<userid>:<password>@cluster0.zadqe.mongodb.net/nextjs-messenger-mern-socket?retryWrites=true&w=majority"
 ```
 
 ![Screenshot](https://user-images.githubusercontent.com/73199603/152814175-12e08253-6e71-4ce1-aacb-daadaf576912.png)
