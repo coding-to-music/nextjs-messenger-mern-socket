@@ -45,6 +45,7 @@ After that create a `.env` file in the backend folder, it should look something 
 ```dotenv
 DATABASE_URL=mongodb+srv://<username>:<password>@cluster0.oop39.mongodb.net/<collection-name>?retryWrites=true&w=majority
 PORT=5000
+
 ```
 
 To start the application you need to run the frontend and backend server with the following commands.
