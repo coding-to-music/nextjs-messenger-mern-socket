@@ -107,7 +107,7 @@ const ChatWindow = () => {
                   {messages.map((message: MessageType, i) => (
                     <Message
                       message={message}
-                      key={v4()}
+                      key={uuidv4()}
                       lastMessageRef={i === messages.length - 1 ? ref : null}
                     />
                   ))}
