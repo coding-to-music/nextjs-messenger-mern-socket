@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import classes from './ModalProvider.module.scss';
 import { useAppDispatch, useAppSelector } from '../../store/app/hooks';
+// import { createPortal } from 'react-dom';
 import { createPortal } from 'react-dom';
 import classNames from 'classnames';
 import { removeModal } from '../../store/features/globalSlice';
