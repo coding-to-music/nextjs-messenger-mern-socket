@@ -4,7 +4,6 @@ import classes from './ChatWindow.module.scss';
 import { Message as MessageType } from '../../store/models/Chat';
 import Message from 'components/Message/Message';
 import { SocketEvents } from 'constants/socketEvents';
-// import { v4 } from 'uuid';
 import { v4 as uuidv4 } from 'uuid';
 import { useAppDispatch, useAppSelector } from '../../store/app/hooks';
 import ChatHeader from '../ChatHeader/ChatHeader';

@@ -73,7 +73,7 @@ export default function Home() {
           loading={loading}
         />
         <div>
-          Don't have a account?{' '}
+          Don&ldquo;t have a account?{'none'}
           <span className={classes.Link}>
             <Link href={Paths.REGISTER}>Click here</Link>
           </span>

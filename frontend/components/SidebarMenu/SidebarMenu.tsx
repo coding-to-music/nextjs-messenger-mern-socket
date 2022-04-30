@@ -7,7 +7,6 @@ import Input from '../Input/Input';
 import { useForm } from 'react-hook-form';
 import { User } from '../../store/models/Auth';
 import OnlineUser from '../OnlineUser/OnlineUser';
-// import { v4 } from 'uuid';
 import { v4 as uuidv4 } from 'uuid';
 import UserStatus from '../UserStatus/UserStatus';
 import { SocketEvents } from '../../constants/socketEvents';
@@ -119,7 +118,7 @@ const SidebarMenu = () => {
                   (user) =>
                     loggedUser?.username !== user.username && (
                       <OnlineUser
-                        key={v4()}
+                        key={uuidv4()}
                         user={user}
                         onClick={() => dispatch(pickReceiver(user))}
                       />
