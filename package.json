@@ -22,6 +22,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/uuid": "^8.3.4",
     "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
     "express": "^4.17.2",
