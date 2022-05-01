@@ -43,7 +43,7 @@ npm i
 After that create a `.env` file in the backend folder, it should look something like this.
 
 ```dotenv
-DATABASE_URL=mongodb+srv://<username>:<password>@cluster0.oop39.mongodb.net/<collection-name>?retryWrites=true&w=majority
+MONGODB_URI="mongodb+srv://<userid>:<password>@cluster0.zadqe.mongodb.net/nextjs-messenger-mern-socket?retryWrites=true&w=majority"
 PORT=5000
 
 ```
@@ -52,10 +52,10 @@ To start the application you need to run the frontend and backend server with th
 
 ```bash
 cd frontend
-npm dev
+npm run dev
 
 cd backbend
-npm dev
+npm dev dev
 ```
 
 If everything works correctly you should get these two outputs in your terminal windows.
