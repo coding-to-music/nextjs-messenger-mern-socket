@@ -147,3 +147,26 @@ git push heroku
 
 npm run deploy
 ```
+
+## Debugging - Troubleshooting connection issues
+
+https://socket.io/docs/v4/troubleshooting-connection-issues/
+
+Please make sure the Socket.IO server is actually reachable at the given URL. You can test it with:
+
+```java
+curl "http://localhost:5000/socket.io/?EIO=4&transport=polling"
+
+```
+
+which should return something like this:
+
+```java
+# mine
+0{"sid":"EgEdOYSW92CZrvUUAAAO","upgrades":["websocket"],"pingInterval":25000,"pingTimeout":20000,"maxPayload":1000000}
+
+# example
+0{"sid":"Lbo5JLzTotvW3g2LAAAA","upgrades":["websocket"],"pingInterval":25000,"pingTimeout":20000}
+```
+
+If that's not the case, please check that the Socket.IO server is running, and that there is nothing in between that prevents the connection.
