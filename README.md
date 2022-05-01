@@ -170,3 +170,35 @@ which should return something like this:
 ```
 
 If that's not the case, please check that the Socket.IO server is running, and that there is nothing in between that prevents the connection.
+
+## Can't push to Heroku, get build error:
+
+```java
+emote:        > frontend@ build /tmp/build_f02ea0dd/frontend
+remote:        > next build
+remote:
+remote:        warn  - No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+remote:        Attention: Next.js now collects completely anonymous telemetry regarding usage.
+remote:        This information is used to shape Next.js' roadmap and prioritize features.
+remote:        You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+remote:        https://nextjs.org/telemetry
+remote:
+remote:        info  - Checking validity of types...
+remote: Failed to compile.
+remote:
+remote: ./components/ChatInput/ChatInput.tsx:52:14
+remote: Type error: 'Picker' cannot be used as a JSX component.
+remote:   Its element type 'ReactElement<any, any> | Component<IEmojiPickerProps, any, any>' is not a valid JSX element.
+remote:     Type 'Component<IEmojiPickerProps, any, any>' is not assignable to type 'Element | ElementClass'.
+remote:       Type 'Component<IEmojiPickerProps, any, any>' is not assignable to type 'ElementClass'.
+remote:         The types returned by 'render()' are incompatible between these types.
+remote:           Type 'React.ReactNode' is not assignable to type 'import("/tmp/build_f02ea0dd/node_modules/@types/react/index").ReactNode'.
+remote:
+remote:   50 |         {visible && (
+remote:   51 |           <div className={classes.Picker} ref={pickerRef}>
+remote: > 52 |             <Picker onEmojiClick={onEmojiClick} />
+remote:      |              ^
+remote:   53 |           </div>
+remote:   54 |         )}
+remote:   55 |       </form>
+```
